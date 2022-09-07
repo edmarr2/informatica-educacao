@@ -7,7 +7,7 @@
     </div>
     <b-modal :id="nameModal" hide-footer>
         <form-wizard :title="subtitle" :subtitle="description" :nextButtonText="'Próximo'" :backButtonText="'Voltar'" @on-complete="() => $bvModal.hide(nameModal)" :finishButtonText="'Finalizar'">
-            <div v-for="iframe in iframeUrl" :key="iframe.position"> 
+            <div v-for="(iframe, index) in iframeUrl" :key="index+1"> 
                 <tab-content :title="iframe.title">
                     <b-embed
                         type="iframe"
