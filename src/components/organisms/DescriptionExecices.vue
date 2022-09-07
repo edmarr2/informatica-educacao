@@ -6,7 +6,7 @@
       </description-bold>
       <image-component :image="kids.url" :alt="kids.alt" :data-index="kids.id" class="imageComponent"/>
     </div>
-    <carrousel-with-modal :numberKids="kids.id" :iframeUrl="kids.iframeUrl"/>
+    <carrousel-with-modal :numberKids="kids.id" :iframeUrl="kids.iframeUrl" :subtitle="kids.subtitle" :description="kids.description"/>
   </div>
 </template>
 

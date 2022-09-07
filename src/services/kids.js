@@ -6,26 +6,42 @@ const kids = [
     {
       id: 1,
       title: 'Privacidade',
+      subtitle: 'Privacidade na Internet',
+      description: 'Assista o vídeo e logo após jogue',
       url: privacidadeImg,
       alt: 'Menina branca com cabelo marrom, com lenço amarelo na cabeça, camisa vermelha, saia azul, tenis vermelho segurando um smartphone',
       done: false,
-      iframeUrl: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0'
+      iframeUrl: [
+        {position: 2, url: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0', title: 'Jogo educativo'},
+        {position: 1, url: 'https://www.youtube.com/embed/IRYbq9EMyNM', title: 'Vídeo educativo'},
+      ]
     },
     {
       id: 2,
       title: 'Segurança',
+      subtitle: 'Segurança na Internet',
+      description: 'Assista o vídeo e logo após jogue',
       url: segurancaImg,
       alt: 'Menina branca com cabelo preto, com capacete de metal e dois chifres brancos na cabeça, camisa marrom escuro, calça preta, botas marrom escura, segurando uma espada e escudo',
       done: false,
-      iframeUrl: 'https://wordwall.net/pt/embed/c87e7039d8aa41e3bc504a5d45952a11?themeId=48&templateId=22&fontStackId=0'
+      iframeUrl: [
+        {position: 2, url: 'https://wordwall.net/pt/embed/c87e7039d8aa41e3bc504a5d45952a11?themeId=48&templateId=22&fontStackId=0', title: 'Jogo educativo'},
+        {position: 1, url: 'https://www.youtube.com/embed/IRYbq9EMyNM', title: 'Vídeo educativo'},
+        {position: 3, url: 'https://wordwall.net/pt/embed/c87e7039d8aa41e3bc504a5d45952a11?themeId=48&templateId=22&fontStackId=0', title: 'Jogo educativo'},
+      ]
     },
     {
       id: 3,
       title: 'Consumismo',
+      subtitle: 'Consumismo na Internet',
+      description: 'Assista o vídeo e logo após jogue',
       url: consumismoImg,
       alt: 'Menino branco com cabelo preto, camisa amarelo limão, short azul, tenis azul segurando dinheiro',
       done: false,
-      iframeUrl: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0'
+      iframeUrl: [
+        {position: 2, url: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0', title: 'Jogo educativo'},
+        {position: 1, url: 'https://www.youtube.com/embed/IRYbq9EMyNM', title: 'Vídeo educativo'},
+      ]
     }
   ]
 
