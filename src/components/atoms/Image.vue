@@ -29,7 +29,11 @@ export default {
   overflow: hidden;
   margin-bottom: 5px;
 }
-
+@media screen and (max-width: 800px) {
+    .image-equipament {
+      height: 14vh;
+    }
+} 
 .button-image {
   width: 15px;
 }

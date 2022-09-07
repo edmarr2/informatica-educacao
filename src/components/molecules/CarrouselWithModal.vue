@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="d-flex align-items-start justify-content-end">
-        <b-button class="btn-warning" 
+        <b-button class="btn-warning font-size"
                     id="show-btn" 
                     @click="$bvModal.show(nameModal)">Jogar</b-button>
     </div>
@@ -51,5 +51,15 @@ methods: {
 </script>
 
 <style scoped>
-
+@media screen and (max-width: 900px) {
+    .font-size {
+        font-size: 12px;
+    }
+} 
+@media screen and (max-width: 800px) {
+    .font-size {
+        font-size: 10px;
+        margin-right: 20px;
+    }
+} 
 </style>
