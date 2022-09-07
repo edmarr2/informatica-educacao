@@ -27,7 +27,7 @@ export default {
   min-width: auto;
   height: 20vh;
   overflow: hidden;
-  margin: 10px;
+  margin-bottom: 5px;
 }
 
 .button-image {
