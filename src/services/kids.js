@@ -13,6 +13,11 @@ const kids = [
       done: false,
       iframeUrl: [
         {url: 'https://www.youtube.com/embed/IRYbq9EMyNM', title: 'Vídeo'},
+      ],
+      games: [
+        {url: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0', title: 'Jogo'},
+        {url: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0', title: 'Jogo'},
+        {url: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0', title: 'Jogo'},
         {url: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0', title: 'Jogo'},
       ]
     },
@@ -26,6 +31,8 @@ const kids = [
       done: false,
       iframeUrl: [
         {url: 'https://www.youtube.com/embed/IRYbq9EMyNM', title: 'Vídeo'},
+      ],
+      games: [
         {url: 'https://wordwall.net/pt/embed/c87e7039d8aa41e3bc504a5d45952a11?themeId=48&templateId=22&fontStackId=0', title: 'Jogo'},
       ]
     },
@@ -39,6 +46,8 @@ const kids = [
       done: false,
       iframeUrl: [
         {url: 'https://www.youtube.com/embed/IRYbq9EMyNM', title: 'Vídeo'},
+      ],
+      games: [
         {url: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0', title: 'Jogo'},
       ]
     }

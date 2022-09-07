@@ -6,11 +6,12 @@
                     @click="$bvModal.show(nameModal)">Jogar</b-button>
     </div>
     <b-modal :id="nameModal" hide-footer>
-        <form-wizard :title="subtitle" :subtitle="description" :nextButtonText="'Próximo'" :backButtonText="'Voltar'" @on-complete="() => $bvModal.hide(nameModal)" :finishButtonText="'Finalizar'">
+        <form-wizard :title="subtitle" :subtitle="description" :nextButtonText="'Próximo'" :backButtonText="'Voltar'" @on-complete="onCompleted" :finishButtonText="'Vamos lá'">
             <div v-for="(iframe, index) in iframeUrl" :key="index+1"> 
                 <tab-content :title="iframe.title">
                     <b-embed
                         type="iframe"
+                        :style="{zIndex: 1}"
                         aspect="16by9"
                         :src="iframe.url"
                         width="100%"
@@ -45,6 +46,10 @@ methods: {
       },
       onSlideEnd() {
         this.sliding = false
+      },
+      onCompleted() {
+        this.$bvModal.hide(this.nameModal)
+        this.$router.push(`games/${this.numberKids}`)
       }
     }
 };
