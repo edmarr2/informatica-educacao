@@ -1,6 +1,6 @@
 <template>
     <nav class="header">
-      <img src="@/assets/loho.png" width="100">
+      <img src="@/assets/loho.png" width="100" @click="redirectToHome()">
       <div class="header-links">
         <router-link to="/" class="links">Início</router-link>
       </div>
@@ -10,6 +10,11 @@
 <script>
 export default {
   name: "HeaderLink",
+  methods: {
+    redirectToHome () {
+      this.$router.push("/")
+    }
+  }
 };
 </script>
 

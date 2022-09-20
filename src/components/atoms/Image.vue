@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="image" :class="classImage" :alt="alt" />
+      <img :src="image" :class="classImage" :alt="alt" />
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
       required: false,
       default: "image-equipament"
     },
-  },
+  }
 };
 </script>
 
