@@ -7,9 +7,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 // FormWizard
 import VueFormWizard from 'vue-form-wizard'
+import VueSparkles from  'vue-sparkles';
 import 'vue-form-wizard/dist/vue-form-wizard.min.css'
-Vue.use(VueFormWizard)
 
+Vue.use(VueFormWizard)
+Vue.use(VueSparkles);
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin

@@ -25,7 +25,7 @@ export default {
 <style scoped>
 .image-equipament {
   min-width: auto;
-  height: 20vh;
+  height: 15vh;
   overflow: hidden;
   margin-bottom: 5px;
 }

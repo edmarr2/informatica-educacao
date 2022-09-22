@@ -1,5 +1,5 @@
 <template>
-  <h2 :style="{fontSize: '24px', marginTop: '15px'}">{{ description }}</h2>
+  <h2 :style="{fontSize: '22px', marginTop: '15px'}">{{ description }}</h2>
 </template>
 
 <script>
