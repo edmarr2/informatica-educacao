@@ -23,10 +23,14 @@
                     </figure>
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center;">
-                        <b-button class="font-size"
+                        <b-button
                           :style="'background-color:' + kid.colorButton + ';margin: 5px; border: none; width: 50%;'"
                           id="show-btn" 
-                          @click="$bvModal.show(kid.title)">Jogar</b-button>
+                          @click="$bvModal.show(kid.title)">
+                            <span class="font-size">
+                              Jogar
+                            </span>
+                          </b-button>
                 </div>
               </div>
             </div>            
@@ -149,8 +153,9 @@ export default {
   opacity: 0;
 }
 
-.font-size-12 {
-  font-size: 12px;
+.font-size {
+  font-size: 16px;
+  color: white;
 }
 .imageComponent {
   display: flex; 
