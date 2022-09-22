@@ -34,12 +34,12 @@
                 </div>
               </div>
             </div>            
-            <b-modal :id="kid.title" hide-footer>
-              <form-wizard :title="kid.subtitle" 
-                           :subtitle="kid.description" 
+            <b-modal :id="kid.title" hide-footer hide-header>
+              <form-wizard :title="''" 
+                           :subtitle="''" 
                            :nextButtonText="'Próximo'" 
                            :backButtonText="'Voltar'" 
-                           @on-complete="onCompleted" 
+                           @on-complete="onCompleted(kid.id)" 
                            :finishButtonText="'Vamos lá'">
                   <div v-for="(iframe, index) in kid.iframeUrl" :key="index+1"> 
                       <tab-content :title="iframe.title">
@@ -91,10 +91,8 @@ export default {
     updateCheckedExercises(e) {
       console.log(e)
     },
-    onCompleted() {
-        this.$bvModal.hide(this.nameModal)
-        console.log('cai aqui')
-        this.$router.push(`games/${this.numberKids}`)
+    onCompleted(kidId) {
+        this.$router.push(`games/${kidId}`)
     }
   }
 };
