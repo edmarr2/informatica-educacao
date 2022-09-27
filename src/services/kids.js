@@ -11,7 +11,7 @@ const kids = [
       description: 'Assista o vídeo e logo após jogue',
       url: baiacuImg,
       alt: 'Menina branca com cabelo marrom, com lenço amarelo na cabeça, camisa vermelha, saia azul, tenis vermelho segurando um smartphone',
-      done: false,
+      isOpen: true,
       iframeUrl: [
         {url: 'https://scratch.mit.edu/projects/733168337/embed', title: 'Vídeo'},
       ],
@@ -28,12 +28,12 @@ const kids = [
       description: 'Assista o vídeo e logo após jogue',
       url: morcegoImg,
       alt: 'Menina branca com cabelo preto, com capacete de metal e dois chifres brancos na cabeça, camisa marrom escuro, calça preta, botas marrom escura, segurando uma espada e escudo',
-      done: false,
+      isOpen: false,
       iframeUrl: [
         {url: 'https://scratch.mit.edu/projects/736661969/embed', title: 'Vídeo'},
       ],
       games: [
-        {url: 'https://wordwall.net/pt/embed/c87e7039d8aa41e3bc504a5d45952a11?themeId=48&templateId=22&fontStackId=0', title: 'Jogo'},
+        {url: 'https://wordwall.net/pt/embed/1d863d34cd5e4b1eb6f24afc04463e31?themeId=22&templateId=45&fontStackId=0', title: 'Jogo'},
       ],
       colorButton: '#ffca3a'
     },
@@ -44,7 +44,7 @@ const kids = [
       description: 'Assista o vídeo e logo após jogue',
       url: pinguimImg,
       alt: 'Menino branco com cabelo preto, camisa amarelo limão, short azul, tenis azul segurando dinheiro',
-      done: false,
+      isOpen: false,
       iframeUrl: [
         {url: 'https://scratch.mit.edu/projects/733028265/embed', title: 'Vídeo'},
       ],
@@ -60,9 +60,9 @@ const kids = [
       description: 'Assista o vídeo e logo após jogue',
       url: macacoImg,
       alt: 'Menino branco com cabelo preto, camisa amarelo limão, short azul, tenis azul segurando dinheiro',
-      done: false,
+      isOpen: false,
       iframeUrl: [
-        {url: 'https://scratch.mit.edu/projects/736429726/embed', title: 'Vídeo'},
+        {url: 'https://wordwall.net/pt/embed/0b76cc2779d545cf95582a058fa31298?themeId=23&templateId=49&fontStackId=0', title: 'Vídeo'},
       ],
       games: [
         {url: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0', title: 'Jogo'},
