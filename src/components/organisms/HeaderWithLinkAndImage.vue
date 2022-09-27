@@ -3,6 +3,7 @@
       <img src="@/assets/loho.png" width="100" @click="redirectToHome()">
       <div class="header-links">
         <router-link to="/" class="links">Início</router-link>
+        <router-link to="/sobre" class="links">Sobre</router-link>
       </div>
     </nav>
 </template>
