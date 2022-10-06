@@ -8,8 +8,8 @@ Vue.use(Router);
 
 export default new Router({
     routes: [
-        { path: "/", component: HomeComponent},
-        { path: "/games/:gameId", component: GamesComponent },
-        { path: "/sobre", component: AboutComponent },
+        { path: "/", component: HomeComponent, name: 'Informática na Educação - Início'},
+        { path: "/games/:gameId", component: GamesComponent, name: 'Informática na Educação - Games'},
+        { path: "/sobre", component: AboutComponent, name: 'Informática na Educação - Sobre' },
     ]
 })

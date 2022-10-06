@@ -17,7 +17,10 @@ Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 Vue.config.productionTip = false
-
+router.beforeEach((to, from, next) => {
+  document.title = to.name;
+  next();
+});
 new Vue({
   router,
   render: h => h(App),
