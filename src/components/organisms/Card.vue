@@ -73,14 +73,23 @@ export default {
   components: {
     ImageKids,
   },
+  mounted() {
+    this.kids.map((kidSelected) => {
+      if (localStorage.getItem(`kid-${kidSelected.id}`)) {
+        this.kids.find((kid) => kid.id === kidSelected.id+1).active = true
+      }
+    })
+    localStorage.getItem("molecules")
+  },
   methods: {
     onCompleted(kidId) {
-        this.$router.push(`games/${kidId}`)
+      this.$router.push(`games/${kidId}`)
+      localStorage.setItem(`kid-${kidId}`, true)
     },
     openModal(kidSelected) {
       this.kids.find(kid => kid.id == kidSelected.id).showButton = false
       this.$bvModal.show(kidSelected.id)
-      setTimeout(() => this.kids.find(kid => kid.id == kidSelected.id).showButton = true, 50000)
+      setTimeout(() => this.kids.find(kid => kid.id == kidSelected.id).showButton = true, 5000)
     }
   }
 };
