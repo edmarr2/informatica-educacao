@@ -1,6 +1,6 @@
 <template>
   <div>
-      <img :src="image" :class="classImage" :alt="alt" />
+      <img :src="image" :alt="alt"  class="image-kids"/>
   </div>
 </template>
 
@@ -13,32 +13,24 @@ export default {
       required: true,
     },
     alt: String,
-    classImage: {
-      type: String,
-      required: false,
-      default: "image-equipament"
-    },
   }
 };
 </script>
 
 <style scoped>
-.image-equipament {
+.image-kids {
   min-width: auto;
-  height: 15vh;
+  height: 20vh;
   overflow: hidden;
   margin-bottom: 5px;
 }
 @media screen and (max-width: 800px) {
-    .image-equipament {
+    .image-kids {
       height: 14vh;
     }
 } 
-.button-image {
-  width: 15px;
-}
 @media (min-width: 100px) and (max-width: 700px) {
-  .image-equipament {
+  .image-kids {
     height: auto;
     width: 60vw;
     min-height: 50%;

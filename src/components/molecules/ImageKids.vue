@@ -1,6 +1,6 @@
 <template>
-  <div >
-    <image-component :image="kids.url" :classImage="classImage" :data-index="index" />
+  <div>
+      <image-component :image="kids.url" :class="classImage" :data-index="index" />
   </div>
 </template>
 <script>
@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     classImage() {
-      return this.kids.active ? 'image-equipament' : 'image-equipament-off';
+      return !this.kids.active && 'image-kids-off';
     },
   },
 };
@@ -32,5 +32,12 @@ export default {
 .list{
   display: block;
   grid-template-columns: 1fr;
+}
+.image-kids-off {
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
 }
 </style>

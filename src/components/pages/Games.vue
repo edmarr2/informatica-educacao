@@ -7,7 +7,7 @@
           aspect="16by9"
           :src="game.url"
           width="75%"
-          height="300"
+          height="500"
           allowfullscreen
         ></b-embed>
       </div>
@@ -40,8 +40,8 @@ export default {
 
 <style scoped>
   .selected {
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh; 
     margin-top: 25px;
 }
 @media screen and (max-width: 900px) {
