@@ -11,5 +11,6 @@ export default new Router({
         { path: "/", component: HomeComponent, name: 'Informática na Educação - Início'},
         { path: "/games/:gameId", component: GamesComponent, name: 'Informática na Educação - Games'},
         { path: "/sobre", component: AboutComponent, name: 'Informática na Educação - Sobre' },
-    ]
+    ],
+    mode: 'history'
 })
