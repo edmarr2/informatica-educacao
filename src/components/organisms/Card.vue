@@ -56,7 +56,7 @@
           src="https://embed.lottiefiles.com/animation/61324"
           width="100%"
           height="200px"
-          allowfullscreen
+          allowfullscreen="true"
       ></b-embed>
     </div>
   </div>
@@ -89,7 +89,7 @@ export default {
     openModal(kidSelected) {
       this.kids.find(kid => kid.id == kidSelected.id).showButton = false
       this.$bvModal.show(kidSelected.id)
-      setTimeout(() => this.kids.find(kid => kid.id == kidSelected.id).showButton = true, 5000)
+      setTimeout(() => this.kids.find(kid => kid.id == kidSelected.id).showButton = true, kidSelected.timeVideo)
     }
   }
 };

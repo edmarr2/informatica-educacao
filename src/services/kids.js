@@ -7,17 +7,17 @@ const kids = [
     {
       id: 1,
       title: 'Consumismo',
-      subtitle: 'Privacidade na Internet',
       description: 'Assista o vídeo e logo após jogue',
-      url: baiacuImg,
-      alt: 'Menina branca com cabelo marrom, com lenço amarelo na cabeça, camisa vermelha, saia azul, tenis vermelho segurando um smartphone',
+      url: morcegoImg,
+      alt: 'Morcego',
       active: true,
       showButton: false,
+      timeVideo: 150000,
       iframeUrl: [
-        {url: 'https://scratch.mit.edu/projects/733168337/embed', title: 'Privacidade', isOpen: false},
+        {url: 'https://scratch.mit.edu/projects/746922921/embed', title: 'Consumismo', isOpen: false},
       ],
       games: [
-        {url: 'https://wordwall.net/pt/embed/70261737ebd44866b82ad1c4538246cf?themeId=46&templateId=48&fontStackId=0', title: 'Jogo'}
+        {url: 'https://wordwall.net/pt/embed/f32ddd7970914da3b7d875654cc27316?themeId=21&templateId=69&fontStackId=0', title: 'Jogo'}
         
       ],
       colorButton: '#6a4c93'
@@ -25,51 +25,51 @@ const kids = [
     {
       id: 2,
       title: 'Malware',
-      subtitle: 'Segurança na Internet',
       description: 'Assista o vídeo e logo após jogue',
-      url: morcegoImg,
-      alt: 'Menina branca com cabelo preto, com capacete de metal e dois chifres brancos na cabeça, camisa marrom escuro, calça preta, botas marrom escura, segurando uma espada e escudo',
+      url: baiacuImg,
+      alt: 'Baiacu - Peixe que simboliza Malware',
       active: false,
       showButton: false,
+      timeVideo: 133000,
       iframeUrl: [
-        {url: 'https://scratch.mit.edu/projects/736661969/embed', title: 'Segurança', isOpen: false},
+        {url: 'https://scratch.mit.edu/projects/737029095/embed', title: 'Malware', isOpen: false},
       ],
       games: [
-        {url: 'https://wordwall.net/pt/embed/1d863d34cd5e4b1eb6f24afc04463e31?themeId=22&templateId=45&fontStackId=0', title: 'Jogo'},
+        {url: 'https://wordwall.net/pt/embed/d3565ff647c24eb387f9ef48777c0324?themeId=21&templateId=30&fontStackId=0', title: 'Jogo'},
       ],
       colorButton: '#ffca3a'
-    },
+    },  
     {
       id: 3,
       title: 'Informações',
-      subtitle: 'Consumismo na Internet',
       description: 'Assista o vídeo e logo após jogue',
       url: pinguimImg,
-      alt: 'Menino branco com cabelo preto, camisa amarelo limão, short azul, tenis azul segurando dinheiro',
+      alt: 'Pinguim',
       active: false,
       showButton: false,
+      timeVideo: 90000,
       iframeUrl: [
-        {url: 'https://scratch.mit.edu/projects/733028265/embed', title: 'Consumismo', isOpen: false},
+        {url: 'https://scratch.mit.edu/projects/733028265/embed', title: 'Informações', isOpen: false},
       ],
       games: [
-        {url: 'https://wordwall.net/pt/embed/0b76cc2779d545cf95582a058fa31298?themeId=23&templateId=49&fontStackId=0', title: 'Jogo'},
+        {url: 'https://wordwall.net/pt/embed/742f89c788a946cc97ec46d36006702f?themeId=23&templateId=49&fontStackId=0', title: 'Quiz de TV'},
       ],
-      colorButton: '#8ac926'
-    },    
+      colorButton: '#1982c4'
+    },
     {
       id: 4,
       title: 'Configurações',
-      subtitle: 'Consumismo na Internet',
       description: 'Assista o vídeo e logo após jogue',
       url: macacoImg,
-      alt: 'Menino branco com cabelo preto, camisa amarelo limão, short azul, tenis azul segurando dinheiro',
+      alt: 'Macaco',
       active: false,
       showButton: false,
+      timeVideo: 83000,
       iframeUrl: [
-        {url: 'https://wordwall.net/pt/embed/0b76cc2779d545cf95582a058fa31298?themeId=23&templateId=49&fontStackId=0', title: 'Configurações', isOpen: false},
+        {url: 'https://scratch.mit.edu/projects/750566691/embed', title: 'Configurações', isOpen: false},
       ],
       games: [
-        {url: 'https://wordwall.net/pt/embed/e7eb10b24ccc4035bd87bbf42282938a?themeId=46&templateId=48&fontStackId=0', title: 'Jogo'},
+        {url: 'https://wordwall.net/pt/embed/9baa742eb9954e67942c16572e3d3a14?themeId=22&templateId=71&fontStackId=0', title: 'Quiz de TV'},
       ],
       colorButton: '#1982c4'
     },
