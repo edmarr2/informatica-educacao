@@ -1,10 +1,11 @@
 pipeline {
     agent any
-    tools {nodejs "node"}
     stages {
-        stage('Stage 1') {
+        stage ('Install dependencies') {
             steps {
-                echo 'Hello world!'
+                sh "apk add nodejs"
+                sh "echo $PATH"
+                sh "npm install"
             }
         }
         stage('Unit Test') {
