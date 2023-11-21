@@ -18,9 +18,9 @@ describe('title component - Unit', () => {
       }
     })
 
-    await wrapper.setProps({ title: 'teste' })
+    await wrapper.setProps({ title: 'teste123' })
     await wrapper.vm.$nextTick()
 
-    expect(wrapper.vm.title).toEqual('teste')
+    expect(wrapper.vm.title).toEqual('teste123')
   })
 })
